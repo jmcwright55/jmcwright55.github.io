@@ -1,59 +1,72 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
-  <link href="style.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+ <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <header>
     <h1>My Portfolio</h1>
-    <p>Showcasing my projects & creative work</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p class="about">
+      Hi, I’m [Your Name]! 👋 I enjoy building modern, responsive websites and applications.  
+      This portfolio will showcase my future projects as I continue learning and growing. 🚀
+    </p>
+  </section>
 
-  <div class="container">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! I’m passionate about building beautiful and functional projects. This portfolio is a growing collection of my work — check back as I add new projects!</p>
-    </section>
-
-    <section id="projects">
-      <h2>My Projects</h2>
-      <div class="portfolio-grid">
-        <!-- Example Project Card -->
-        <div class="card">
-          <img src="https://via.placeholder.com/400x200" alt="Project 1">
-          <div class="card-content">
-            <h3>Project Title</h3>
-            <p>A short description of the project. You can link to the live demo or GitHub below.</p>
-          </div>
-        </div>
-        
-        <!-- Duplicate this block for more projects -->
-        <div class="card">
-          <img src="https://via.placeholder.com/400x200" alt="Project 2">
-          <div class="card-content">
-            <h3>Project Title</h3>
-            <p>Another example description. This section grows with your portfolio.</p>
-          </div>
-        </div>
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card" data-aos="zoom-in">
+        <h3>Project 1</h3>
+        <p>A modern website design with responsive layout.</p>
       </div>
-    </section>
+      <div class="card" data-aos="zoom-in" data-aos-delay="150">
+        <h3>Project 2</h3>
+        <p>An e-commerce template built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="300">
+        <h3>Project 3</h3>
+        <p>A creative landing page with animations and smooth scrolling.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Want to get in touch? Reach out at <a href="mailto:youremail@example.com">youremail@example.com</a>.</p>
-    </section>
-  </div>
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p style="text-align: center;">
+      📧 You can reach me at <a href="mailto:your@email.com">your@email.com</a>
+    </p>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Your Name | Built with ❤</p>
+    <p>© 2025 My Portfolio. All rights reserved.</p>
   </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
